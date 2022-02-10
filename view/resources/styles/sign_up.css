@@ -1,0 +1,158 @@
+@import url('./templates/general.css');
+
+body {
+    background-color: #2e046c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%236200ff' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+.form {
+    padding: 1em;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 192, 203, 0.8);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(255, 192, 203, 0.90);
+}
+
+.form .success {
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: .7em;
+    background-color: rgb(0, 179, 0);
+    color: white;
+    border-radius: 15px;
+}
+
+.form .error {
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: .7em;
+    background-color: rgb(126, 1, 1);
+    color: white;
+    border-radius: 15px;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between
+}
+
+.container > div {
+    height: max-content;
+    margin: 0 1em;
+    box-shadow: 0px 0px 5px black;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.container div:last-child {
+    box-shadow: none;
+}
+
+.st_part {
+    display: flex;
+    flex-direction: column;
+}
+
+.st_part span {
+    margin-right: 2em;
+}
+
+.snd_part {
+    display: flex;
+    flex-direction: column;
+}
+
+.snd_part span {
+    margin-right: 2em;
+}
+
+.rd-part {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5em 0;
+}
+
+input {
+    padding: .5em;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#error_birthdate {
+    font-size: .7em;
+}
+
+#country {
+    width: 150px;
+    padding: .5em;
+}
+
+fieldset {
+    border: 3px solid rgb(50, 0, 107);
+    padding: 1em;
+    border-radius: 20px;
+}
+
+legend {
+    padding: 5px;
+    background-color: rgb(119, 0, 255);
+    border: 2px solid black;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+fieldset span {
+    margin-right: .5em;
+}
+
+.form a {
+    margin-left: 1em;
+}
+
+#btn-sub {
+    color: white;
+    width: 80px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: .5em;
+    border-radius: 10px;
+    background-color: blueviolet;
+    box-shadow: 0px 1px 0px black;
+}
+
+#btn-sub:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+#btn-sub:active {
+    position: relative;
+    top: 1px;
+    box-shadow: none;
+}

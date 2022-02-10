@@ -1,0 +1,5 @@
+@import url('./templates/general.css');
+
+header h1 {
+    color: black;
+}

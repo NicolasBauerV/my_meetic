@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resources/pictures/shortcut-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./resources/styles/account.css">
+    <title>My Account</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./resources/pictures/meetic-logo.jpg" alt="Logo" id="logo">
+            <ul>
+                <li><a href="./member_page.html">Home</a></li>
+                <li><a href="./account.html">My Account</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Account informations</h2>
+
+            <div>
+                <span>Last Name: </span><span class="user_info"></span>
+            </div>
+
+            <div>
+                <span>First Name: </span><span class="user_info"></span>
+            </div>
+
+            <div>
+                <span>Email: </span><span class="user_info"></span>
+            </div>
+
+            <div>
+                <span>Birthdate: </span><span class="user_info"></span>
+            </div>
+
+            <div>
+                <span>Gender: </span><span class="user_info"></span>
+            </div>
+
+            <div>
+                <span>City: </span><span class="user_info"></span>
+            </div>
+
+            <div>
+                <span>Country: </span><span class="user_info"></span>
+            </div>
+
+            <!-- <span id="hobbies">Hobbies: </span> -->
+        </div>
+        <div class="form">
+            <div class="part">
+                <span id="message"></span>
+                <h2>Want to change something ?</h2>
+                <label for="email">
+                    <span>Email: </span>
+                    <input type="email" name="email" id="email" placeholder="email@domain.com">
+                </label>
+
+                <label for="password">
+                    <span>Password: </span>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </label>
+
+                <label for="password_conf">
+                    <span>Confirm Password: </span>
+                    <input type="password" name="password_conf" id="password_conf" placeholder="Confirm Password">
+                </label>
+                <button type="submit" id="btn-sub">Send</button>
+            </div>  
+        </div>
+        <button id="disconnect">Disconnect</button> 
+    </main>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="./resources/scripts/account.js"></script>
+</body>
+</html>

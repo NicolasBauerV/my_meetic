@@ -1,0 +1,120 @@
+@import url('./templates/general.css');
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 1em;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 192, 203, 0.8);
+    border-radius: 15px;
+}
+
+.container div {
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_info {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.form {
+    padding: 1em;
+    background-color: rgba(255, 192, 203, 0.8);
+    margin-top: 2em;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.part {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: .5em;
+}
+
+label {
+    margin: .5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    padding: .5em;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.success {
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: .7em;
+    background-color: rgb(0, 179, 0);
+    color: white;
+    border-radius: 15px;
+}
+
+/* Button */
+
+#btn-sub {
+    color: white;
+    width: max-content;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: .5em 1.5em;
+    border-radius: 10px;
+    background-color: blueviolet;
+    box-shadow: 0px 1px 0px black;
+}
+
+#btn-sub:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+#btn-sub:active {
+    position: relative;
+    top: 1px;
+    box-shadow: none;
+}
+
+#disconnect {
+    color: white;
+    width: max-content;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: .5em;
+    border-radius: 10px;
+    background-color: rgb(226, 43, 137);
+    box-shadow: 0px 1px 0px black;
+}
+
+#disconnect:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+#disconnect:active {
+    position: relative;
+    top: 1px;
+    box-shadow: none;
+}

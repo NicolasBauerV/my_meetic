@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resources/pictures/shortcut-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./resources/styles/sign_in.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./resources/pictures/meetic-logo.jpg" alt="Logo" id="logo">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Sign In</h1>
+    </header>
+    <main>
+        <div class="form">
+            <div class="container">
+                <span id="message"></span>
+                <div class="st_part">
+                    <label for="email" class="label_input">
+                        <span>Email </span>
+                        <input class="req_inp_text" type="email" name="email" id="email" placeholder="email@domain.com">
+                    </label>
+                    <label for="password" class="label_input">
+                        <span>Password </span>
+                        <input class="req_inp_text" type="password" name="password" id="password" placeholder="Password">
+                    </label>
+                </div>
+            </div>
+            <span id="link_create"><a href="./sign_up.html">You prefer create an account ?</a></span> <button type="submit" id="btn-sub">Send</button>
+        </div>
+    </main>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="./resources/scripts/sign_in.js"></script>
+</body>
+</html>
